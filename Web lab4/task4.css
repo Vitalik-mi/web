@@ -1,0 +1,14 @@
+.square {
+	width: 200px;
+	height: 200px;
+	background: red;
+	animation: 0.75s infinite square;
+}
+
+@keyframes square{
+	0% {background:orange;}
+	1%{background: red;}
+	50% {background: purple;}
+	99%{background: blue;}
+	100% {background: green;}
+}

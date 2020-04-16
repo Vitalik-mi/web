@@ -1,0 +1,19 @@
+.circle{
+  width: 250px;
+  height: 250px;
+  background: red;
+  border-radius: 50%;
+  transition-timing-function:linear; 
+  transition-duration: 0.25s;
+  margin: 60px;
+  }
+
+
+.circle:hover{
+	transform:;
+	border-radius: 10px;
+	background:#2ABB11;
+	transition-timing-function:linear; 
+	transition-duration: 0.25s;
+
+}

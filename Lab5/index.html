@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta Charset="utf-8">
+    <title>Робота з js</title>
+    <link rel ="stylesheet" href="style.css">
+    
+    <script src="fiscal.js"></script>
+</head>
+<body>
+    <main >
+        <nav>
+            <ul>
+                <li><a href="index.html">Фіскальний кодекс</a></li>
+                <li><a href="index t2.html">Відстань до найближчого голосного</a></li>
+                <li><a href="index t3.html">Наполегливість</a></li>
+            </ul>
+        </nav>
+    </main>
+     <h1>Заповніть поля для знаходження фіксального коду</h1>      
+    <div>
+        <h4>Ім'я:</h4>
+        <input type="text" value="" onchange="Name = this.value">
+        <h4>Прізвище:</h4>
+        <input  type="text" value=""onchange="Surname = this.value">    
+        <h4>Стать:</h4>
+        <input  type="radio" id="male" name="gender" value="male" onclick="Male = true" >
+        <label  for="male">Чоловіча</label><br>
+        <input  type="radio" id="female" name="gender" value="female" onclick="Male =false">
+        <label  for="female">Жіноча</label><br>
+         <h4>Дата народження:</h4>
+                    
+        <h4>День:</h4>
+        <input type="text" value="" maxlength="2" onchange="day = this.value">
+        <h4>Місяць:</h4>
+        <input type="text" value="" maxlength="2" onchange="month = this.value">
+        <h4> Рік:</h4>
+        <input type="text" value="" maxlength="4" onchange="year = this.value">
+        <div>
+            <button id="fiscal-code-button" onclick="output_code()">Розрахувати Фіскальний код</button><br>
+        </div>
+        <h3>Фіскальний код: </h3>
+        <span  id="code-output"></span>
+    </div>
+        
+            
+</body>
+</html>

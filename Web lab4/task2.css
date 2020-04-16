@@ -1,0 +1,13 @@
+div {
+  width: 200px;
+  height: 200px;
+  transition-duration: 2s;
+  
+  background-color: gray;
+  transition-delay: 2s;
+}
+
+.rotated {
+  transform: rotateX(45deg);
+  background-color: blue;
+}
