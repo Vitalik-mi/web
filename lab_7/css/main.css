@@ -1,0 +1,359 @@
+body {
+    font-family: Lato, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #111111;
+}
+
+header {
+    background: url(../img/header.png) no-repeat center top / cover;
+    height: 100vh;
+}
+
+/************************/
+/*Опис логотипа*/
+.logo {
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+.container-menu {
+    width: 1480px;
+}
+
+.container {
+    width: 1200px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+/*Опис кнопки меню*/
+.menu-btn {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 50px;
+    margin-right: -50px;
+    width: 25px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+
+
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+
+
+}
+
+.menu-btn span::before {
+    transform: translateY(-10px);
+    width: 34px;
+}
+
+.menu-btn span::after {
+    transform: translateY(7px);
+    width: 20px;
+
+}
+
+.menu-btn_active span {
+    height: 0px;
+
+}
+
+.menu-btn_active span:before {
+    transform: rotate(45deg);
+    width: 25px;
+}
+
+.menu-btn_active span:after {
+    transform: rotate(-45deg);
+    width: 25px;
+
+}
+
+.menu-block {
+    float: right;
+    display: flex;
+    align-items: center;
+    padding-top: 17px;
+
+
+}
+
+.menu-nav__link {
+
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+
+}
+
+.menu-nav__link {
+    transition: 0.5s;
+    transform-origin: right center;
+    transform: scaleX(1) translateX(10%);
+    opacity: 0;
+
+}
+
+.menu-nav__link_active {
+    transform: scaleX(1) translateX(0%);
+    opacity: 1;
+}
+
+/*Кінець опису кнопки меню*/
+
+.titles__first {
+    font-family: Lato;
+    font-size: 95px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 190px;
+}
+
+h1,
+h2 {
+    font-family: Lato;
+    font-size: 95px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin-top: -40px;
+    margin-bottom: 20px;
+
+}
+
+.button {
+    background: #ea0d60;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    display: block;
+    width: 150px;
+    padding: 16px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bg_2 {
+    background: url(../img/bg-car.png) no-repeat center top / cover;
+    height: 100vh;
+}
+
+.title {
+    padding-top: 80px;
+}
+
+.title h2 {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #111111;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.num {
+    margin-bottom: -50px;
+    margin-right: 350px;
+    opacity: .1;
+}
+
+.line_01 {
+    color: #ea0d60;
+}
+
+.text {
+    width: 590px;
+    text-align: start;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #505050;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.buy-now {
+    background: url(../img/CTA_bg.png) no-repeat center top / cover;
+    height: 350px;
+
+}
+
+.buy-car {
+    padding-top: 80px;
+    font-size: 53px;
+}
+
+.titles h2 {
+    font-size: 53px;
+    padding-top: 20px;
+}
+
+.car-img {
+    padding-top: 85px;
+    padding-left: 40px;
+    margin: 0 auto;
+}
+
+.l2 {
+    margin-right: 80px;
+
+}
+
+.check_oud,
+full_specification {
+    padding-bottom: 110px;
+    font-family: Lato, sans-serif;
+    color: #333333;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.check_oud {
+    text-decoration: none;
+    color: #333333;
+}
+
+.full_specification {
+    color: #ea0d60;
+    text-decoration: underline;
+}
+
+.bg_3 {
+    background: url(../img/03_bg.png) no-repeat center top / cover;
+    height: 100vh;
+}
+
+.title_3 h2 {
+    color: #fff;
+}
+
+.l3 {
+    margin-right: 150px;
+
+}
+
+.price-car {
+
+    font-size: 39px;
+    padding-bottom: 5px;
+}
+
+.titles h2 {
+    font-size: 39px;
+}
+
+.price {
+    margin: 0 auto;
+    margin-top: -25px;
+    padding-left: 180px;
+    font-family: Lato, sans-serif;
+    color: #ea0d60;
+    font-weight: 100;
+    font-size: 128px;
+}
+
+.line-price {
+    margin-top: -80px;
+}
+
+.bg-4 {
+    background-color: #000;
+    height: 500px;
+}
+
+.services__item {
+    float: left;
+}
+
+span {
+    color: #ea0d60;
+
+}
+
+.services__item {
+    text-align: left;
+    font-family: Lato, sans-serif;
+}
+
+.services__item h3 {
+    padding-top: 145px;
+
+    text-align: left;
+    color: #fff;
+    font-size: 31px;
+    margin-right: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.services__item ul {
+    font-family: Lato, sans-serif;
+    text-align: left;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-bg {
+    background-color: #000;
+    height: 140px;
+    margin: 0;
+}
+
+.copyright {
+    float: left;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 5px;
+    color: #797979;
+}
+
+.icons {
+    float: right;
+    padding-top: 5px;
+}
+.form{
+	margin-top: -35px;
+	margin-left: 500px;
+}

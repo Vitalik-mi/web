@@ -1,0 +1,18 @@
+
+@font-face{
+	font-family: 'Lato';
+	src:(../fonts/Lato-Regular.ttf) format("truetype");;
+}
+@font-face{
+	font-family: 'Montserrat-Bold';
+	src:(../fonts/Montserrat-Bold.ttf) format("truetype");;
+}
+@font-face{
+	font-family: 'Montserrat-Regular';
+	src:(../fonts/Montserrat-Regular.ttf) format("truetype");;
+}
+@font-face{
+	font-family: 'Poppins-Regular';
+	src:(../fonts/Poppins-Regular.ttf) format("truetype");;
+}
+
