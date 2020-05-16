@@ -164,6 +164,7 @@ h2 {
 .bg_2 {
     background: url(../img/bg-car.png) no-repeat center top / cover;
     height: 100vh;
+    margin-bottom: -190px;
 }
 
 .title {
