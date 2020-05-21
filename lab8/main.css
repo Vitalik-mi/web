@@ -1,0 +1,51 @@
+body {
+    font-family:  sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #111111;
+}
+
+header {
+    background: url(img/abstract-metallic-red-black-background-with-contrast-stripes-abstract-graphic-brochure-design_71775-935.jpg) no-repeat center top / cover;
+    height: 100vh;
+}
+section{
+    background-color: #f0fd34;
+}
+.input{
+    color: #fff;
+}
+h3{
+    color: #fff;
+}
+
+p
+{
+    margin: 0;
+    font-size: 150%;
+}
+thead
+{
+    background: #ccc;
+}
+table
+{
+    border-collapse: collapse;
+    text-align: center;
+    margin:auto;
+    margin-top: 10vh;
+    border: 1px solid black;
+}
+th,td,tr
+{
+    padding: 5px;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: black;
+}
+.container {
+    padding-top: 400px;
+    width: 1200px;
+    margin-top: 30px;
+    margin: 0 auto;
+}

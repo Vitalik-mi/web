@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RxJS </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <caption>
+                <h3>
+                    Час з останнього оновлення даних:
+                    <p id="update"></p>
+                </h3>
+            </caption>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <table id="Table">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Name company</th>
+                        <th>Price</th>
+                        <th>Last update</th>
+                    </tr>
+                </thead>
+                <tbody id="TableData">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="rxjs/node_modules/rxjs/bundles/rxjs.umd.min.js"></script>
+    <script src="rx.js"></script>
+</body>
+
+</html>
