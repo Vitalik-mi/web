@@ -1,0 +1,45 @@
+<div class="container" ng-controller="MainCtrl">
+    <div class="row uploadbar">
+        <h2 class="text-center">Firebase Photo Uploader</h2>
+        <div class="col-md-8 col-md-offset-2">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="uploadbar">{{percentage}}% Complete </div>
+            </div>
+            <div class="class-center">
+                <button ngf-select="selectFile($files)" accept="image/jpeg" class="btn btn-success">Choose File</button>
+                <button class="btn btn-success">Go To Gallery</button>
+                <a href="#!/gallery" class=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="row" >
+    	<div class="col-md-8 col-md-offset-2">
+    		<h3 class="Files:"></h3>
+    		<div ng-show="displayMsg">
+    		<p class="text-center">{{msg}}</p>
+    	</div>
+    	<div class="row" ng-repeat="file in fileList">
+    	<div class="col-md-2">
+    		<img ngf-thumbanail="file || ./thumb.jpg" width="100%">
+    	</div>
+    	<div class="col-md-7">
+    		<p>{{file.name}}</p>
+    	</div>
+    	<div class="col-md-3">
+    		<p>{{file.size/1000 | number:2 }}KB</p>
+    	</div>
+    	<div class="col-md-12">
+    		<div class="row" style="margin-top: 10px;">
+    			<div class="col-md-9">
+    				<input type="text" name="tags" class="form-control" placeholder="Add tags Here..." ng-model="tags.name">
+    			</div>
+    			<div class="col-md-3">
+    				<button class="btn btn-sm btn-succes"  ng-click="uploadFile (file)">Upload</button>
+    				<button class="btn btn-sm btn-danger" ng-click="removeFile(file)">Remove</button>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    	</div>
+    </div>
+</div>
